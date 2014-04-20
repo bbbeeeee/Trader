@@ -1,5 +1,5 @@
 module.exports = {
-  db: process.env.MONGODB|| 'mongodb://localhost:27017/tamstrade',
+  db: process.env.MONGODB|| 'mongodb://<brandon>:<k)29slaf>@oceanic.mongohq.com:10004/app24354278',
 
   sessionSecret: process.env.SESSION_SECRET || 'Your Session Secret goes here',
 
