@@ -1,0 +1,10 @@
+extends layout
+
+block content
+ each buy in buys
+  div.listItem
+   h4=buy.item
+   a(href='#{buy.userURL}', target="_blank")
+    h4=buy.username
+   h4=buy.price
+

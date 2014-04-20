@@ -1,0 +1,9 @@
+extends layout
+
+block content
+ each sell in sells
+  div.listItem
+   h4=sell.item
+   a(href='#{sell.userURL}', target="_blank")
+    h4=sell.username
+   h4=sell.price

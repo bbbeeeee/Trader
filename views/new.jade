@@ -1,0 +1,16 @@
+extends layout
+
+block content
+ h1 Need
+ div.homeForm
+  form#newBuy.form-horizontal(method='post', action='/needed/new')
+   input.form-control(type='text', placeholder='What you want', name='item')
+   input.form-control(type='text', placeholder='Your offer', name='price')
+   input(type='hidden', name='_csrf', value=_csrf)
+   button(type='submit', class='btn') Submit
+  h1 To Sell
+  form#newSell.form-horizontal(method='post', action='/sell/new')
+   input.form-control(type='text', placeholder='Your item', name='item')
+   input.form-control(type='text', placeholder='What you want for it', name='price')
+   input(type='hidden', name='_csrf', value=_csrf)
+   button(type='submit', class='btn') Submit
